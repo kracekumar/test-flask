@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<button id="button"> Click for JSON Response </button>
+		<div id="update"></div>
+	<script src="{{url_for('static', filename='jquery-1.7.1.min.js')}}"></script>
+	<script type="text/javascript">
+		$("#button").on('click', function(e){
+			$.ajax({
+				type: "POST",
+				url: "http://localhost:8888/json",
+				success: function(msg){
+					$("#update").html(msg['msg']);
+				}
+			});
+		});
+	</script>
+</html>
