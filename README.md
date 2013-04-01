@@ -10,12 +10,13 @@ Run
 
 visit `http://localhost:8888/` and click on the button in web browser and mobile browser. Mobile browser produces error.
 
-`Check Console`
+`Check Console for error message`
 ===
 ```
-send jquery-1.7.1.min.js:4
-f.extend.ajax jquery-1.7.1.min.js:4
+POST http://localhost:8888/json  jquery-1.8.3.js:8434
+send jquery-1.8.3.js:8434
+jQuery.extend.ajax jquery-1.8.3.js:7986
 (anonymous function) 192.168.0.101:8
-f.event.dispatch jquery-1.7.1.min.js:3
-h.handle.i
+jQuery.event.dispatch jquery-1.8.3.js:3058
+elemData.handle.eventHandle
 ```
