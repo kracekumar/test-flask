@@ -10,6 +10,9 @@
 				url: "http://localhost:8888/json",
 				success: function(msg){
 					$("#update").html(msg['msg']);
+				},
+				error: function(msg){
+					console.log(msg);
 				}
 			});
 		});
